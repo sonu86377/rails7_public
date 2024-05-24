@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ProductItem</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+  </head>
+
+  <body>
+  <div class="content">
+  <div id="top">
+    <div class="topright">
+       <a href="#"><img src="/assets/sitemap.png" alt="Sitemap" /></a> ^ 
+       <a href="#"><img src="/assets/rss.png" alt="RSS" /></a>				
+    </div>
+  </div>
+  <div id="header">
+    
+    <div class="headings">
+      <h1>DesignCreek02</h1>
+      <h2>Website Slogan</h2>
+    </div>
+  </div>
+
+    <div id="menu">
+        <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About_us</a></li>
+        <li><a href="#">Academics</a></li>
+        <li><a href="#">Department</a></li>
+            <li><a href="#">Faculties_services</a></li>
+            <li><a href="#">Students</a></li>
+          </ul>
+    </div>	
+    
+  
+  <div id="main">
+    <div class="right">
+      
+      
+      <div class="nav">
+      <h2>Right Column</h2>
+      <div class="text">
+    You could use this space to display the latest news, a calendar, random photos, the choice is yours, its here if you need it.
+      </div>
+      <h2>More Links?</h2>
+        <ul>
+          <li><a href="http://www.openwebdesign.org">OWD</a></li>
+          <li><a href="http://www.designcreek.com">DesignCreek</a></li>
+          <li><a href="#">Link.three</a></li>
+          <li><a href="#">Link.four</a></li>
+          
+        </ul>
+      </div>
+    </div>
+    <div class="left">
+      
+     
+    			
+    
+    <%= yield %>
+    <div class="img_left"><img src="/assets/img.jpg" alt="" /></div>	
+      <div class="img_right"><img src="/assets/img.jpg" alt="" /></div>
+
+
+    </div>
+    
+  </div>
+  
+  <div id="footer">
+    <div class="info">
+      &copy; 2024 sonu<br />
+    </div>
+  </div>
+</div>
+   
+  </body>
+</html>

@@ -1,0 +1,16 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Product item1s</h1>
+
+<div id="product_item1s">
+  <% @product_item1s.each do |product_item1| %>
+    <%= render product_item1 %>
+    <p>
+      <%= link_to "Show this product item1", product_item1 %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New product item1", new_product_item1_path %>
+
+<%= will_paginate @product_item1 %>

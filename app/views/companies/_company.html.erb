@@ -1,0 +1,18 @@
+<div id="<%= dom_id company %>">
+  <p>
+    <strong>Name:</strong>
+    <%= company.name %>
+  </p>
+
+  <p>
+    <strong>Year:</strong>
+    <%= company.year %>
+  </p>
+
+  <% company.employee_r.each do |emp| %>
+   Name : <%= emp.name %> <br />
+    Age : <%= emp.age %> <br />
+    Salary : <%= emp.salary%> <br />
+    <% end %> <br /> <br />
+
+</div>

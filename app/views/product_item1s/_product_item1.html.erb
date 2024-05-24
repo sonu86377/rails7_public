@@ -1,0 +1,21 @@
+<div id="<%= dom_id product_item1 %>">
+<% if product_item1.product_image.attached? %> 
+<%= image_tag product_item1.product_image , height: "200" , width: "150" %>
+<% end %>
+  <p>
+    <strong>Name:</strong>
+    <%= product_item1.name %>
+  </p>
+
+  
+
+  <p>
+    <strong>Price:</strong>
+    <%= product_item1.price %>
+  </p>
+  <p>
+    <strong>about_product:</strong>
+    <%= product_item1.about_product %>
+  </p>
+
+</div>
